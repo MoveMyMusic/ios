@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB73812D175A8FBF00B66F80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB73812C175A8FBF00B66F80 /* UIKit.framework */; };
+		EB73812F175A8FBF00B66F80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB73812E175A8FBF00B66F80 /* Foundation.framework */; };
+		EB738131175A8FBF00B66F80 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB738130175A8FBF00B66F80 /* CoreGraphics.framework */; };
+		EB738133175A8FBF00B66F80 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB738132175A8FBF00B66F80 /* CoreData.framework */; };
+		EB738139175A8FBF00B66F80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB738137175A8FBF00B66F80 /* InfoPlist.strings */; };
+		EB73813B175A8FBF00B66F80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB73813A175A8FBF00B66F80 /* main.m */; };
+		EB73813F175A8FBF00B66F80 /* mmmAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB73813E175A8FBF00B66F80 /* mmmAppDelegate.m */; };
+		EB738141175A8FBF00B66F80 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EB738140175A8FBF00B66F80 /* Default.png */; };
+		EB738143175A8FBF00B66F80 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB738142175A8FBF00B66F80 /* Default@2x.png */; };
+		EB738145175A8FBF00B66F80 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB738144175A8FBF00B66F80 /* Default-568h@2x.png */; };
+		EB738148175A8FBF00B66F80 /* MoveMyMusicApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB738146175A8FBF00B66F80 /* MoveMyMusicApp.xcdatamodeld */; };
+		EB73814B175A8FBF00B66F80 /* mmmMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB73814A175A8FBF00B66F80 /* mmmMasterViewController.m */; };
+		EB73814E175A8FBF00B66F80 /* mmmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB73814D175A8FBF00B66F80 /* mmmDetailViewController.m */; };
+		EB738151175A8FBF00B66F80 /* mmmMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB73814F175A8FBF00B66F80 /* mmmMasterViewController.xib */; };
+		EB738154175A8FBF00B66F80 /* mmmDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB738152175A8FBF00B66F80 /* mmmDetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB738129175A8FBF00B66F80 /* MoveMyMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoveMyMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB73812C175A8FBF00B66F80 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB73812E175A8FBF00B66F80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB738130175A8FBF00B66F80 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB738132175A8FBF00B66F80 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EB738136175A8FBF00B66F80 /* MoveMyMusicApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoveMyMusicApp-Info.plist"; sourceTree = "<group>"; };
+		EB738138175A8FBF00B66F80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EB73813A175A8FBF00B66F80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB73813C175A8FBF00B66F80 /* MoveMyMusicApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoveMyMusicApp-Prefix.pch"; sourceTree = "<group>"; };
+		EB73813D175A8FBF00B66F80 /* mmmAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mmmAppDelegate.h; sourceTree = "<group>"; };
+		EB73813E175A8FBF00B66F80 /* mmmAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mmmAppDelegate.m; sourceTree = "<group>"; };
+		EB738140175A8FBF00B66F80 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EB738142175A8FBF00B66F80 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		EB738144175A8FBF00B66F80 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EB738147175A8FBF00B66F80 /* MoveMyMusicApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoveMyMusicApp.xcdatamodel; sourceTree = "<group>"; };
+		EB738149175A8FBF00B66F80 /* mmmMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mmmMasterViewController.h; sourceTree = "<group>"; };
+		EB73814A175A8FBF00B66F80 /* mmmMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mmmMasterViewController.m; sourceTree = "<group>"; };
+		EB73814C175A8FBF00B66F80 /* mmmDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mmmDetailViewController.h; sourceTree = "<group>"; };
+		EB73814D175A8FBF00B66F80 /* mmmDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mmmDetailViewController.m; sourceTree = "<group>"; };
+		EB738150175A8FBF00B66F80 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/mmmMasterViewController.xib; sourceTree = "<group>"; };
+		EB738153175A8FBF00B66F80 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/mmmDetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB738126175A8FBF00B66F80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB73812D175A8FBF00B66F80 /* UIKit.framework in Frameworks */,
+				EB73812F175A8FBF00B66F80 /* Foundation.framework in Frameworks */,
+				EB738131175A8FBF00B66F80 /* CoreGraphics.framework in Frameworks */,
+				EB738133175A8FBF00B66F80 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB738120175A8FBF00B66F80 = {
+			isa = PBXGroup;
+			children = (
+				EB738134175A8FBF00B66F80 /* MoveMyMusicApp */,
+				EB73812B175A8FBF00B66F80 /* Frameworks */,
+				EB73812A175A8FBF00B66F80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB73812A175A8FBF00B66F80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB738129175A8FBF00B66F80 /* MoveMyMusicApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB73812B175A8FBF00B66F80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB73812C175A8FBF00B66F80 /* UIKit.framework */,
+				EB73812E175A8FBF00B66F80 /* Foundation.framework */,
+				EB738130175A8FBF00B66F80 /* CoreGraphics.framework */,
+				EB738132175A8FBF00B66F80 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB738134175A8FBF00B66F80 /* MoveMyMusicApp */ = {
+			isa = PBXGroup;
+			children = (
+				EB73813D175A8FBF00B66F80 /* mmmAppDelegate.h */,
+				EB73813E175A8FBF00B66F80 /* mmmAppDelegate.m */,
+				EB738149175A8FBF00B66F80 /* mmmMasterViewController.h */,
+				EB73814A175A8FBF00B66F80 /* mmmMasterViewController.m */,
+				EB73814C175A8FBF00B66F80 /* mmmDetailViewController.h */,
+				EB73814D175A8FBF00B66F80 /* mmmDetailViewController.m */,
+				EB73814F175A8FBF00B66F80 /* mmmMasterViewController.xib */,
+				EB738152175A8FBF00B66F80 /* mmmDetailViewController.xib */,
+				EB738146175A8FBF00B66F80 /* MoveMyMusicApp.xcdatamodeld */,
+				EB738135175A8FBF00B66F80 /* Supporting Files */,
+			);
+			path = MoveMyMusicApp;
+			sourceTree = "<group>";
+		};
+		EB738135175A8FBF00B66F80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB738136175A8FBF00B66F80 /* MoveMyMusicApp-Info.plist */,
+				EB738137175A8FBF00B66F80 /* InfoPlist.strings */,
+				EB73813A175A8FBF00B66F80 /* main.m */,
+				EB73813C175A8FBF00B66F80 /* MoveMyMusicApp-Prefix.pch */,
+				EB738140175A8FBF00B66F80 /* Default.png */,
+				EB738142175A8FBF00B66F80 /* Default@2x.png */,
+				EB738144175A8FBF00B66F80 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB738128175A8FBF00B66F80 /* MoveMyMusicApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB738157175A8FBF00B66F80 /* Build configuration list for PBXNativeTarget "MoveMyMusicApp" */;
+			buildPhases = (
+				EB738125175A8FBF00B66F80 /* Sources */,
+				EB738126175A8FBF00B66F80 /* Frameworks */,
+				EB738127175A8FBF00B66F80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoveMyMusicApp;
+			productName = MoveMyMusicApp;
+			productReference = EB738129175A8FBF00B66F80 /* MoveMyMusicApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB738121175A8FBF00B66F80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = mmm;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = movemymusic;
+			};
+			buildConfigurationList = EB738124175A8FBF00B66F80 /* Build configuration list for PBXProject "MoveMyMusicApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EB738120175A8FBF00B66F80;
+			productRefGroup = EB73812A175A8FBF00B66F80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB738128175A8FBF00B66F80 /* MoveMyMusicApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB738127175A8FBF00B66F80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB738139175A8FBF00B66F80 /* InfoPlist.strings in Resources */,
+				EB738141175A8FBF00B66F80 /* Default.png in Resources */,
+				EB738143175A8FBF00B66F80 /* Default@2x.png in Resources */,
+				EB738145175A8FBF00B66F80 /* Default-568h@2x.png in Resources */,
+				EB738151175A8FBF00B66F80 /* mmmMasterViewController.xib in Resources */,
+				EB738154175A8FBF00B66F80 /* mmmDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB738125175A8FBF00B66F80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB73813B175A8FBF00B66F80 /* main.m in Sources */,
+				EB73813F175A8FBF00B66F80 /* mmmAppDelegate.m in Sources */,
+				EB738148175A8FBF00B66F80 /* MoveMyMusicApp.xcdatamodeld in Sources */,
+				EB73814B175A8FBF00B66F80 /* mmmMasterViewController.m in Sources */,
+				EB73814E175A8FBF00B66F80 /* mmmDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB738137175A8FBF00B66F80 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB738138175A8FBF00B66F80 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EB73814F175A8FBF00B66F80 /* mmmMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB738150175A8FBF00B66F80 /* en */,
+			);
+			name = mmmMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		EB738152175A8FBF00B66F80 /* mmmDetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB738153175A8FBF00B66F80 /* en */,
+			);
+			name = mmmDetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB738155175A8FBF00B66F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EB738156175A8FBF00B66F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB738158175A8FBF00B66F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoveMyMusicApp/MoveMyMusicApp-Prefix.pch";
+				INFOPLIST_FILE = "MoveMyMusicApp/MoveMyMusicApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EB738159175A8FBF00B66F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoveMyMusicApp/MoveMyMusicApp-Prefix.pch";
+				INFOPLIST_FILE = "MoveMyMusicApp/MoveMyMusicApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB738124175A8FBF00B66F80 /* Build configuration list for PBXProject "MoveMyMusicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB738155175A8FBF00B66F80 /* Debug */,
+				EB738156175A8FBF00B66F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB738157175A8FBF00B66F80 /* Build configuration list for PBXNativeTarget "MoveMyMusicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB738158175A8FBF00B66F80 /* Debug */,
+				EB738159175A8FBF00B66F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB738146175A8FBF00B66F80 /* MoveMyMusicApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB738147175A8FBF00B66F80 /* MoveMyMusicApp.xcdatamodel */,
+			);
+			currentVersion = EB738147175A8FBF00B66F80 /* MoveMyMusicApp.xcdatamodel */;
+			path = MoveMyMusicApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB738121175A8FBF00B66F80 /* Project object */;
+}
