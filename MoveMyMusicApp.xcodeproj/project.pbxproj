@@ -19,9 +19,30 @@
 		EB738145175A8FBF00B66F80 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB738144175A8FBF00B66F80 /* Default-568h@2x.png */; };
 		EB738148175A8FBF00B66F80 /* MoveMyMusicApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB738146175A8FBF00B66F80 /* MoveMyMusicApp.xcdatamodeld */; };
 		EB73814B175A8FBF00B66F80 /* mmmMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB73814A175A8FBF00B66F80 /* mmmMasterViewController.m */; };
-		EB73814E175A8FBF00B66F80 /* mmmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB73814D175A8FBF00B66F80 /* mmmDetailViewController.m */; };
 		EB738151175A8FBF00B66F80 /* mmmMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB73814F175A8FBF00B66F80 /* mmmMasterViewController.xib */; };
-		EB738154175A8FBF00B66F80 /* mmmDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB738152175A8FBF00B66F80 /* mmmDetailViewController.xib */; };
+		EB73815E175A928000B66F80 /* mmmOnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB73815C175A928000B66F80 /* mmmOnboardingViewController.m */; };
+		EB73815F175A928000B66F80 /* mmmOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB73815D175A928000B66F80 /* mmmOnboardingViewController.xib */; };
+		EB738162175A93D500B66F80 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = EB738161175A93D500B66F80 /* Song.m */; };
+		EB738166175A9CEB00B66F80 /* mmmTeacherOnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB738164175A9CEB00B66F80 /* mmmTeacherOnboardingViewController.m */; };
+		EB738167175A9CEB00B66F80 /* mmmTeacherOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB738165175A9CEB00B66F80 /* mmmTeacherOnboardingViewController.xib */; };
+		EB738169175AA3E000B66F80 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB738168175AA3E000B66F80 /* QuartzCore.framework */; };
+		EB73816E175AA4E400B66F80 /* mmmStudentOnboardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB73816C175AA4E400B66F80 /* mmmStudentOnboardingViewController.m */; };
+		EB73816F175AA4E400B66F80 /* mmmStudentOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB73816D175AA4E400B66F80 /* mmmStudentOnboardingViewController.xib */; };
+		EB73817B175AA7A000B66F80 /* eight-note.png in Resources */ = {isa = PBXBuildFile; fileRef = EB738171175AA7A000B66F80 /* eight-note.png */; };
+		EB73817C175AA7A000B66F80 /* eighth-rest.png in Resources */ = {isa = PBXBuildFile; fileRef = EB738172175AA7A000B66F80 /* eighth-rest.png */; };
+		EB73817D175AA7A000B66F80 /* eighth-upside-down.png in Resources */ = {isa = PBXBuildFile; fileRef = EB738173175AA7A000B66F80 /* eighth-upside-down.png */; };
+		EB73817E175AA7A000B66F80 /* half-note.png in Resources */ = {isa = PBXBuildFile; fileRef = EB738174175AA7A000B66F80 /* half-note.png */; };
+		EB73817F175AA7A000B66F80 /* half-rest.png in Resources */ = {isa = PBXBuildFile; fileRef = EB738175175AA7A000B66F80 /* half-rest.png */; };
+		EB738180175AA7A000B66F80 /* quarter-note.png in Resources */ = {isa = PBXBuildFile; fileRef = EB738176175AA7A000B66F80 /* quarter-note.png */; };
+		EB738181175AA7A000B66F80 /* quarter-rest.png in Resources */ = {isa = PBXBuildFile; fileRef = EB738177175AA7A000B66F80 /* quarter-rest.png */; };
+		EB738183175AA7A000B66F80 /* whole-note.png in Resources */ = {isa = PBXBuildFile; fileRef = EB738179175AA7A000B66F80 /* whole-note.png */; };
+		EB738184175AA7A000B66F80 /* whole-rest.png in Resources */ = {isa = PBXBuildFile; fileRef = EB73817A175AA7A000B66F80 /* whole-rest.png */; };
+		EB73818C175AAA4E00B66F80 /* mmmSongCreatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB73818A175AAA4C00B66F80 /* mmmSongCreatorViewController.m */; };
+		EB73818D175AAA4E00B66F80 /* mmmSongCreatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB73818B175AAA4C00B66F80 /* mmmSongCreatorViewController.xib */; };
+		EB738195175AAAE100B66F80 /* draggableImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EB738194175AAAE100B66F80 /* draggableImage.m */; };
+		EB73819D175AB29400B66F80 /* template-bw.png in Resources */ = {isa = PBXBuildFile; fileRef = EB73819C175AB29400B66F80 /* template-bw.png */; };
+		EB7381A0175AB4BB00B66F80 /* APIUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EB73819F175AB4BB00B66F80 /* APIUtility.m */; };
+		EB7381AC175AB8E600B66F80 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7381A6175AB59B00B66F80 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,10 +63,42 @@
 		EB738147175A8FBF00B66F80 /* MoveMyMusicApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoveMyMusicApp.xcdatamodel; sourceTree = "<group>"; };
 		EB738149175A8FBF00B66F80 /* mmmMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mmmMasterViewController.h; sourceTree = "<group>"; };
 		EB73814A175A8FBF00B66F80 /* mmmMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mmmMasterViewController.m; sourceTree = "<group>"; };
-		EB73814C175A8FBF00B66F80 /* mmmDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mmmDetailViewController.h; sourceTree = "<group>"; };
-		EB73814D175A8FBF00B66F80 /* mmmDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mmmDetailViewController.m; sourceTree = "<group>"; };
 		EB738150175A8FBF00B66F80 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/mmmMasterViewController.xib; sourceTree = "<group>"; };
-		EB738153175A8FBF00B66F80 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/mmmDetailViewController.xib; sourceTree = "<group>"; };
+		EB73815B175A928000B66F80 /* mmmOnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmmOnboardingViewController.h; sourceTree = "<group>"; };
+		EB73815C175A928000B66F80 /* mmmOnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mmmOnboardingViewController.m; sourceTree = "<group>"; };
+		EB73815D175A928000B66F80 /* mmmOnboardingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mmmOnboardingViewController.xib; sourceTree = "<group>"; };
+		EB738160175A93D500B66F80 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		EB738161175A93D500B66F80 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+		EB738163175A9CEB00B66F80 /* mmmTeacherOnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmmTeacherOnboardingViewController.h; sourceTree = "<group>"; };
+		EB738164175A9CEB00B66F80 /* mmmTeacherOnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mmmTeacherOnboardingViewController.m; sourceTree = "<group>"; };
+		EB738165175A9CEB00B66F80 /* mmmTeacherOnboardingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mmmTeacherOnboardingViewController.xib; sourceTree = "<group>"; };
+		EB738168175AA3E000B66F80 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EB73816B175AA4E400B66F80 /* mmmStudentOnboardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmmStudentOnboardingViewController.h; sourceTree = "<group>"; };
+		EB73816C175AA4E400B66F80 /* mmmStudentOnboardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mmmStudentOnboardingViewController.m; sourceTree = "<group>"; };
+		EB73816D175AA4E400B66F80 /* mmmStudentOnboardingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mmmStudentOnboardingViewController.xib; sourceTree = "<group>"; };
+		EB738171175AA7A000B66F80 /* eight-note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eight-note.png"; sourceTree = "<group>"; };
+		EB738172175AA7A000B66F80 /* eighth-rest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eighth-rest.png"; sourceTree = "<group>"; };
+		EB738173175AA7A000B66F80 /* eighth-upside-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eighth-upside-down.png"; sourceTree = "<group>"; };
+		EB738174175AA7A000B66F80 /* half-note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "half-note.png"; sourceTree = "<group>"; };
+		EB738175175AA7A000B66F80 /* half-rest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "half-rest.png"; sourceTree = "<group>"; };
+		EB738176175AA7A000B66F80 /* quarter-note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quarter-note.png"; sourceTree = "<group>"; };
+		EB738177175AA7A000B66F80 /* quarter-rest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quarter-rest.png"; sourceTree = "<group>"; };
+		EB738179175AA7A000B66F80 /* whole-note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whole-note.png"; sourceTree = "<group>"; };
+		EB73817A175AA7A000B66F80 /* whole-rest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whole-rest.png"; sourceTree = "<group>"; };
+		EB738189175AAA4C00B66F80 /* mmmSongCreatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmmSongCreatorViewController.h; sourceTree = "<group>"; };
+		EB73818A175AAA4C00B66F80 /* mmmSongCreatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mmmSongCreatorViewController.m; sourceTree = "<group>"; };
+		EB73818B175AAA4C00B66F80 /* mmmSongCreatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mmmSongCreatorViewController.xib; sourceTree = "<group>"; };
+		EB738193175AAAE100B66F80 /* draggableImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = draggableImage.h; sourceTree = "<group>"; };
+		EB738194175AAAE100B66F80 /* draggableImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = draggableImage.m; sourceTree = "<group>"; };
+		EB73819C175AB29400B66F80 /* template-bw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "template-bw.png"; sourceTree = "<group>"; };
+		EB73819E175AB4BB00B66F80 /* APIUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIUtility.h; sourceTree = "<group>"; };
+		EB73819F175AB4BB00B66F80 /* APIUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIUtility.m; sourceTree = "<group>"; };
+		EB7381A5175AB59B00B66F80 /* JSONKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		EB7381A6175AB59B00B66F80 /* JSONKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		EB7381A8175AB5B700B66F80 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		EB7381A9175AB5B700B66F80 /* NSString+MD5Addition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		EB7381AA175AB5B700B66F80 /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		EB7381AB175AB5B800B66F80 /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB738169175AA3E000B66F80 /* QuartzCore.framework in Frameworks */,
 				EB73812D175A8FBF00B66F80 /* UIKit.framework in Frameworks */,
 				EB73812F175A8FBF00B66F80 /* Foundation.framework in Frameworks */,
 				EB738131175A8FBF00B66F80 /* CoreGraphics.framework in Frameworks */,
@@ -83,6 +137,7 @@
 		EB73812B175A8FBF00B66F80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB738168175AA3E000B66F80 /* QuartzCore.framework */,
 				EB73812C175A8FBF00B66F80 /* UIKit.framework */,
 				EB73812E175A8FBF00B66F80 /* Foundation.framework */,
 				EB738130175A8FBF00B66F80 /* CoreGraphics.framework */,
@@ -94,15 +149,14 @@
 		EB738134175A8FBF00B66F80 /* MoveMyMusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				EB73818F175AAA9700B66F80 /* Core Data */,
+				EB73818E175AAA8B00B66F80 /* Music Creator */,
+				EB73815A175A926D00B66F80 /* Onboarding */,
 				EB73813D175A8FBF00B66F80 /* mmmAppDelegate.h */,
 				EB73813E175A8FBF00B66F80 /* mmmAppDelegate.m */,
 				EB738149175A8FBF00B66F80 /* mmmMasterViewController.h */,
 				EB73814A175A8FBF00B66F80 /* mmmMasterViewController.m */,
-				EB73814C175A8FBF00B66F80 /* mmmDetailViewController.h */,
-				EB73814D175A8FBF00B66F80 /* mmmDetailViewController.m */,
 				EB73814F175A8FBF00B66F80 /* mmmMasterViewController.xib */,
-				EB738152175A8FBF00B66F80 /* mmmDetailViewController.xib */,
-				EB738146175A8FBF00B66F80 /* MoveMyMusicApp.xcdatamodeld */,
 				EB738135175A8FBF00B66F80 /* Supporting Files */,
 			);
 			path = MoveMyMusicApp;
@@ -111,6 +165,9 @@
 		EB738135175A8FBF00B66F80 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EB7381A7175AB5AC00B66F80 /* DeviceID */,
+				EB7381A4175AB58D00B66F80 /* JSON */,
+				EB738170175AA79700B66F80 /* Images */,
 				EB738136175A8FBF00B66F80 /* MoveMyMusicApp-Info.plist */,
 				EB738137175A8FBF00B66F80 /* InfoPlist.strings */,
 				EB73813A175A8FBF00B66F80 /* main.m */,
@@ -118,8 +175,85 @@
 				EB738140175A8FBF00B66F80 /* Default.png */,
 				EB738142175A8FBF00B66F80 /* Default@2x.png */,
 				EB738144175A8FBF00B66F80 /* Default-568h@2x.png */,
+				EB73819E175AB4BB00B66F80 /* APIUtility.h */,
+				EB73819F175AB4BB00B66F80 /* APIUtility.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB73815A175A926D00B66F80 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EB73815B175A928000B66F80 /* mmmOnboardingViewController.h */,
+				EB73815C175A928000B66F80 /* mmmOnboardingViewController.m */,
+				EB73815D175A928000B66F80 /* mmmOnboardingViewController.xib */,
+				EB73816B175AA4E400B66F80 /* mmmStudentOnboardingViewController.h */,
+				EB73816C175AA4E400B66F80 /* mmmStudentOnboardingViewController.m */,
+				EB73816D175AA4E400B66F80 /* mmmStudentOnboardingViewController.xib */,
+				EB738163175A9CEB00B66F80 /* mmmTeacherOnboardingViewController.h */,
+				EB738164175A9CEB00B66F80 /* mmmTeacherOnboardingViewController.m */,
+				EB738165175A9CEB00B66F80 /* mmmTeacherOnboardingViewController.xib */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		EB738170175AA79700B66F80 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EB73819C175AB29400B66F80 /* template-bw.png */,
+				EB738171175AA7A000B66F80 /* eight-note.png */,
+				EB738172175AA7A000B66F80 /* eighth-rest.png */,
+				EB738173175AA7A000B66F80 /* eighth-upside-down.png */,
+				EB738174175AA7A000B66F80 /* half-note.png */,
+				EB738175175AA7A000B66F80 /* half-rest.png */,
+				EB738176175AA7A000B66F80 /* quarter-note.png */,
+				EB738177175AA7A000B66F80 /* quarter-rest.png */,
+				EB738179175AA7A000B66F80 /* whole-note.png */,
+				EB73817A175AA7A000B66F80 /* whole-rest.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		EB73818E175AAA8B00B66F80 /* Music Creator */ = {
+			isa = PBXGroup;
+			children = (
+				EB738189175AAA4C00B66F80 /* mmmSongCreatorViewController.h */,
+				EB73818A175AAA4C00B66F80 /* mmmSongCreatorViewController.m */,
+				EB73818B175AAA4C00B66F80 /* mmmSongCreatorViewController.xib */,
+				EB738193175AAAE100B66F80 /* draggableImage.h */,
+				EB738194175AAAE100B66F80 /* draggableImage.m */,
+			);
+			name = "Music Creator";
+			sourceTree = "<group>";
+		};
+		EB73818F175AAA9700B66F80 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				EB738146175A8FBF00B66F80 /* MoveMyMusicApp.xcdatamodeld */,
+				EB738160175A93D500B66F80 /* Song.h */,
+				EB738161175A93D500B66F80 /* Song.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		EB7381A4175AB58D00B66F80 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				EB7381A5175AB59B00B66F80 /* JSONKit.h */,
+				EB7381A6175AB59B00B66F80 /* JSONKit.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		EB7381A7175AB5AC00B66F80 /* DeviceID */ = {
+			isa = PBXGroup;
+			children = (
+				EB7381A8175AB5B700B66F80 /* NSString+MD5Addition.h */,
+				EB7381A9175AB5B700B66F80 /* NSString+MD5Addition.m */,
+				EB7381AA175AB5B700B66F80 /* UIDevice+IdentifierAddition.h */,
+				EB7381AB175AB5B800B66F80 /* UIDevice+IdentifierAddition.m */,
+			);
+			name = DeviceID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +313,20 @@
 				EB738143175A8FBF00B66F80 /* Default@2x.png in Resources */,
 				EB738145175A8FBF00B66F80 /* Default-568h@2x.png in Resources */,
 				EB738151175A8FBF00B66F80 /* mmmMasterViewController.xib in Resources */,
-				EB738154175A8FBF00B66F80 /* mmmDetailViewController.xib in Resources */,
+				EB73815F175A928000B66F80 /* mmmOnboardingViewController.xib in Resources */,
+				EB738167175A9CEB00B66F80 /* mmmTeacherOnboardingViewController.xib in Resources */,
+				EB73816F175AA4E400B66F80 /* mmmStudentOnboardingViewController.xib in Resources */,
+				EB73817B175AA7A000B66F80 /* eight-note.png in Resources */,
+				EB73817C175AA7A000B66F80 /* eighth-rest.png in Resources */,
+				EB73817D175AA7A000B66F80 /* eighth-upside-down.png in Resources */,
+				EB73817E175AA7A000B66F80 /* half-note.png in Resources */,
+				EB73817F175AA7A000B66F80 /* half-rest.png in Resources */,
+				EB738180175AA7A000B66F80 /* quarter-note.png in Resources */,
+				EB738181175AA7A000B66F80 /* quarter-rest.png in Resources */,
+				EB738183175AA7A000B66F80 /* whole-note.png in Resources */,
+				EB738184175AA7A000B66F80 /* whole-rest.png in Resources */,
+				EB73818D175AAA4E00B66F80 /* mmmSongCreatorViewController.xib in Resources */,
+				EB73819D175AB29400B66F80 /* template-bw.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +341,14 @@
 				EB73813F175A8FBF00B66F80 /* mmmAppDelegate.m in Sources */,
 				EB738148175A8FBF00B66F80 /* MoveMyMusicApp.xcdatamodeld in Sources */,
 				EB73814B175A8FBF00B66F80 /* mmmMasterViewController.m in Sources */,
-				EB73814E175A8FBF00B66F80 /* mmmDetailViewController.m in Sources */,
+				EB73815E175A928000B66F80 /* mmmOnboardingViewController.m in Sources */,
+				EB738162175A93D500B66F80 /* Song.m in Sources */,
+				EB738166175A9CEB00B66F80 /* mmmTeacherOnboardingViewController.m in Sources */,
+				EB73816E175AA4E400B66F80 /* mmmStudentOnboardingViewController.m in Sources */,
+				EB73818C175AAA4E00B66F80 /* mmmSongCreatorViewController.m in Sources */,
+				EB738195175AAAE100B66F80 /* draggableImage.m in Sources */,
+				EB7381A0175AB4BB00B66F80 /* APIUtility.m in Sources */,
+				EB7381AC175AB8E600B66F80 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,14 +371,6 @@
 			name = mmmMasterViewController.xib;
 			sourceTree = "<group>";
 		};
-		EB738152175A8FBF00B66F80 /* mmmDetailViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB738153175A8FBF00B66F80 /* en */,
-			);
-			name = mmmDetailViewController.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -240,7 +386,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nicholas J. Krut (AM9ZWXZS46)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nicholas J. Krut (AM9ZWXZS46)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -253,8 +400,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "AFA9FF64-E5ED-4EDE-B655-270CEDA1BD3F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AFA9FF64-E5ED-4EDE-B655-270CEDA1BD3F";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -272,14 +421,17 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nicholas J. Krut (AM9ZWXZS46)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nicholas J. Krut (AM9ZWXZS46)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "AFA9FF64-E5ED-4EDE-B655-270CEDA1BD3F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AFA9FF64-E5ED-4EDE-B655-270CEDA1BD3F";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -289,10 +441,15 @@
 		EB738158175A8FBF00B66F80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nicholas J. Krut (AM9ZWXZS46)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nicholas J. Krut (AM9ZWXZS46)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MoveMyMusicApp/MoveMyMusicApp-Prefix.pch";
 				INFOPLIST_FILE = "MoveMyMusicApp/MoveMyMusicApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2BDC3128-1A74-4BF7-AF85-1A376EF2FBE6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AFA9FF64-E5ED-4EDE-B655-270CEDA1BD3F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -300,10 +457,15 @@
 		EB738159175A8FBF00B66F80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nicholas J. Krut (AM9ZWXZS46)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nicholas J. Krut (AM9ZWXZS46)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MoveMyMusicApp/MoveMyMusicApp-Prefix.pch";
 				INFOPLIST_FILE = "MoveMyMusicApp/MoveMyMusicApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2BDC3128-1A74-4BF7-AF85-1A376EF2FBE6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AFA9FF64-E5ED-4EDE-B655-270CEDA1BD3F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -327,6 +489,7 @@
 				EB738159175A8FBF00B66F80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class mmmDetailViewController;
+@class mmmSongCreatorViewController;
 
 #import <CoreData/CoreData.h>
 
 @interface mmmMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
-@property (strong, nonatomic) mmmDetailViewController *detailViewController;
+@property (strong, nonatomic) mmmSongCreatorViewController *detailViewController;
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

@@ -7,10 +7,9 @@
 //
 
 #import "mmmAppDelegate.h"
-
 #import "mmmMasterViewController.h"
-
-#import "mmmDetailViewController.h"
+#import "mmmSongCreatorViewController.h"
+#import "mmmOnboardingViewController.h"
 
 @implementation mmmAppDelegate
 
@@ -22,22 +21,36 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-
+    
     mmmMasterViewController *masterViewController = [[mmmMasterViewController alloc] initWithNibName:@"mmmMasterViewController" bundle:nil];
     UINavigationController *masterNavigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
-
-    mmmDetailViewController *detailViewController = [[mmmDetailViewController alloc] initWithNibName:@"mmmDetailViewController" bundle:nil];
-    UINavigationController *detailNavigationController = [[UINavigationController alloc] initWithRootViewController:detailViewController];
-
+    [masterNavigationController setNavigationBarHidden:YES];
+    
+    mmmSongCreatorViewController *detailViewController = [[mmmSongCreatorViewController alloc] initWithNibName:@"mmmSongCreatorViewController" bundle:nil];
+    UINavigationController *detailNavigationController = [[UINavigationController alloc] initWithRootViewController:detailViewController];    
+    [detailNavigationController setNavigationBarHidden:YES];
     masterViewController.detailViewController = detailViewController;
-
+    
     self.splitViewController = [[UISplitViewController alloc] init];
     self.splitViewController.delegate = detailViewController;
     self.splitViewController.viewControllers = @[masterNavigationController, detailNavigationController];
     masterViewController.managedObjectContext = self.managedObjectContext;
     self.window.rootViewController = self.splitViewController;
     [self.window makeKeyAndVisible];
+    
+    [self performSelector:@selector(checkOnboarding) withObject:nil afterDelay:0.5f];
+    
     return YES;
+}
+
+- (void)checkOnboarding
+{
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"hasOnboarded"])
+    {
+        UINavigationController *onboardingView = [[UINavigationController alloc] initWithRootViewController:[[mmmOnboardingViewController alloc] initWithNibName:@"mmmOnboardingViewController" bundle:nil]];
+        [onboardingView setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+        [self.window.rootViewController presentViewController:onboardingView animated:YES completion:nil];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
