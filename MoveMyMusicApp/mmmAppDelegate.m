@@ -16,6 +16,7 @@
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+@synthesize userInfo;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -40,7 +41,17 @@
     
     [self performSelector:@selector(checkOnboarding) withObject:nil afterDelay:0.5f];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changedUserDetails:) name:@"AddTeacher" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changedUserDetails:) name:@"AddStudent" object:nil];
+    
+    [self changedUserDetails:nil];
+    
     return YES;
+}
+
+- (void)changedUserDetails:(NSNotification *)notif
+{
+    userInfo = [(NSDictionary *)[[NSUserDefaults standardUserDefaults] objectForKey:@"userDetails"] mutableCopy];
 }
 
 - (void)checkOnboarding
@@ -174,6 +185,68 @@
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+# pragma font stuff
+
+- (void) appleShouldMakeItEasierToSetAGlobalFontForAnApp:(UIView *)view andFont:(NSString *)font {
+    for (UIView *o in view.subviews) {
+        if (o.tag < 10000)
+        {
+            if ([o isKindOfClass:[UILabel class]] || [o isKindOfClass:[UITextView class]] || [o isKindOfClass:[UITextField class]])
+            {
+                [(UILabel *)o setFont:[UIFont fontWithName:font size:[(UILabel *)o font].pointSize]];
+            } else if ([o isKindOfClass:[UIButton class]]) {
+                [[(UIButton *)o titleLabel] setFont:[UIFont fontWithName:font size:[[(UIButton *)o titleLabel] font].pointSize]];
+            }
+        }
+        if ([[o subviews] count] > 0)
+            [self appleShouldMakeItEasierToSetAGlobalFontForAnApp:o andFont:font];
+    }
+}
+
+- (void) appleShouldMakeItEasierToSetAGlobalFontColorForAnApp:(UIView *)view withColor:(UIColor *)color {
+    for (UIView *o in view.subviews) {
+        if (o.tag < 10000)
+        {
+            if ([o isKindOfClass:[UILabel class]] || [o isKindOfClass:[UITextView class]] || [o isKindOfClass:[UITextField class]])
+            {
+                [(UILabel *)o setTextColor:color];
+            } else if ([o isKindOfClass:[UIButton class]]) {
+                [[(UIButton *)o titleLabel] setTextColor:color];
+            }
+        }
+        if ([[o subviews] count] > 0)
+            [self appleShouldMakeItEasierToSetAGlobalFontColorForAnApp:o withColor:color];
+    }
+}
+
+- (void) appleShouldMakeItEasierToSetAClassFontColorForAnApp:(UIView *)view withColor:(UIColor *)color andClass:(Class)nameOfClass {
+    for (UIView *o in view.subviews) {
+        if (o.tag < 10000)
+        {
+            if ([o isKindOfClass:nameOfClass])
+            {
+                if ([o isKindOfClass:[UILabel class]] || [o isKindOfClass:[UITextView class]] || [o isKindOfClass:[UITextField class]])
+                {
+                    [(UILabel *)o setTextColor:color];
+                } else if ([o isKindOfClass:[UIButton class]]) {
+                    [[(UIButton *)o titleLabel] setTextColor:color];
+                } else if ([o isKindOfClass:[UITextField class]]) {
+                    [(UITextField *)o setTextColor:color];
+                } else if ([o isKindOfClass:[UITextView class]]) {
+                    [(UITextView *)o setTextColor:color];
+                }
+            }
+        }
+        if ([[o subviews] count] > 0)
+            [self appleShouldMakeItEasierToSetAClassFontColorForAnApp:o withColor:color andClass:nameOfClass];
+    }
+}
+
+- (void)bauhaus:(UIView *)view
+{
+    [self appleShouldMakeItEasierToSetAGlobalFontForAnApp:view andFont:BAUHAUS];
 }
 
 @end

@@ -21,6 +21,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.title = @"Registration";
     }
     return self;
 }
@@ -29,6 +30,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [(mmmAppDelegate *)[[UIApplication sharedApplication] delegate] bauhaus:self.view];
 }
 
 - (void)didReceiveMemoryWarning

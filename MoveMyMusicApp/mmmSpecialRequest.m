@@ -10,4 +10,6 @@
 
 @implementation mmmSpecialRequest
 
+@synthesize notificationCallback;
+
 @end

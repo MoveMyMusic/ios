@@ -23,4 +23,9 @@
 - (NSString *)uuid;
 + (NSString *)uuid;
 
+- (void)createTeacher:(NSDictionary *)dict;
+- (void)createStudent:(NSDictionary *)dict;
+
++ (UIImage *)colorizeImage:(UIImage *)baseImage color:(UIColor *)theColor;
+
 @end

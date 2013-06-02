@@ -32,6 +32,12 @@
     [super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -87,6 +93,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
+    NSDictionary *userDict = [(mmmAppDelegate *)[[UIApplication sharedApplication] delegate] userInfo];
     if (section == 0)
         return @"Your Teacher";
     return @"Your Music";

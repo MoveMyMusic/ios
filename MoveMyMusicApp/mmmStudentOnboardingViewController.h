@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface mmmStudentOnboardingViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface mmmStudentOnboardingViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
 @end

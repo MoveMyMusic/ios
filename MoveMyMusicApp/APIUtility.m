@@ -9,13 +9,7 @@
 #import "APIUtility.h"
 #import "JSONKit.h"
 #import "UIDevice+IdentifierAddition.h"
-
-@interface NSMutableURLRequest (SpecialRequest)
-
-@property (nonatomic, retain) NSString *notificationCallback;
-
-@end
-
+#import "mmmSpecialRequest.h"
 
 
 @implementation APIUtility
@@ -67,7 +61,7 @@
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
     // Get the current data for this notification
-    NSMutableData *objectData = [dataDict objectForKey:[(NSMutableURLRequest *)connection.currentRequest notificationCallback]];
+    NSMutableData *objectData = [dataDict objectForKey:[(mmmSpecialRequest *)connection.currentRequest notificationCallback]];
     
     // If it doesn't exist (this shouldn't happen but a lot of things shouldn't) create it.
     if (objectData == nil)
@@ -77,20 +71,20 @@
     [objectData appendData:data];
     
     // Save it in the object
-    [dataDict setObject:objectData forKey:[(NSMutableURLRequest *)connection.currentRequest notificationCallback]];
+    [dataDict setObject:objectData forKey:[(mmmSpecialRequest *)connection.currentRequest notificationCallback]];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    if (![connection.currentRequest isKindOfClass:[NSMutableURLRequest class]])
+    if (![connection.currentRequest isKindOfClass:[mmmSpecialRequest class]])
     {
         NSLog(@"This is a weird encounter.  We need to pay attention to this.");
         return;
     }
     
     // Get the object data
-    NSMutableData *objectData = [dataDict objectForKey:[(NSMutableURLRequest *)connection.currentRequest notificationCallback]];
-    [dataDict removeObjectForKey:[(NSMutableURLRequest *)connection.currentRequest notificationCallback]];
+    NSMutableData *objectData = [dataDict objectForKey:[(mmmSpecialRequest *)connection.currentRequest notificationCallback]];
+    [dataDict removeObjectForKey:[(mmmSpecialRequest *)connection.currentRequest notificationCallback]];
     
     // STRING!
     NSString *jsonString           = [[NSString alloc] initWithData:objectData encoding:NSASCIIStringEncoding];//[NSString stringWithUTF8String:[objectData bytes]] stringByA;
@@ -101,15 +95,15 @@
     //[dataDict setObject:[[NSMutableData alloc] init] forKey:[(DrinkrSpecialRequest *)connection.currentRequest notificationCallback]];
     // Send the notification for this event
     if ([jsonDict isKindOfClass:[NSDictionary class]] || [jsonDict isKindOfClass:[NSMutableArray class]])
-        [[NSNotificationCenter defaultCenter] postNotificationName:[(NSMutableURLRequest *)connection.currentRequest notificationCallback] object:nil userInfo:jsonDict];
+        [[NSNotificationCenter defaultCenter] postNotificationName:[(mmmSpecialRequest *)connection.currentRequest notificationCallback] object:nil userInfo:jsonDict];
     else
     {
         if (jsonString != nil)
         {
             NSDictionary *dict = [NSDictionary dictionaryWithObject:jsonString forKey:@"Return"];
-            [[NSNotificationCenter defaultCenter] postNotificationName:[(NSMutableURLRequest *)connection.currentRequest notificationCallback] object:dict userInfo:dict];
+            [[NSNotificationCenter defaultCenter] postNotificationName:[(mmmSpecialRequest *)connection.currentRequest notificationCallback] object:dict userInfo:dict];
         } else {
-            [[NSNotificationCenter defaultCenter] postNotificationName:[(NSMutableURLRequest *)connection.currentRequest notificationCallback] object:nil userInfo:nil];
+            [[NSNotificationCenter defaultCenter] postNotificationName:[(mmmSpecialRequest *)connection.currentRequest notificationCallback] object:nil userInfo:nil];
         }
     }
 }
@@ -118,7 +112,7 @@
 {
     if (![[d_operationQueue operations] containsObject:connection] && ![d_requestsQueue containsObject:connection])
         return;
-    [[NSNotificationCenter defaultCenter] postNotificationName:[(NSMutableURLRequest *)connection.currentRequest notificationCallback] object:error userInfo:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:[(mmmSpecialRequest *)connection.currentRequest notificationCallback] object:error userInfo:nil];
 }
 
 - (NSString *)uuid
@@ -129,6 +123,78 @@
 + (NSString *)uuid
 {
     return [[UIDevice currentDevice] uniqueDeviceIdentifier];
+}
+
+# pragma Actual API Calls
+
+- (void)createTeacher:(NSDictionary *)dict
+{
+    if (![self isOnline])
+        return;
+    NSString *credentials = [dict JSONString];
+    NSData *postData      = [credentials dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:NO];
+    NSString *postLength  = [NSString stringWithFormat:@"%d", [postData length]];
+    
+
+    mmmSpecialRequest *request = [[mmmSpecialRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://%@/teachers", currentDomain]]];
+    [request setNotificationCallback:@"AddTeacher"];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:postData];
+    
+    [NSURLConnection sendAsynchronousRequest:request queue:d_operationQueue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        [self processData:data andSendNotification:request.notificationCallback];
+    }];
+}
+
+- (void)createStudent:(NSDictionary *)dict
+{
+    if (![self isOnline])
+        return;
+    NSString *credentials = [dict JSONString];
+    NSData *postData      = [credentials dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:NO];
+    NSString *postLength  = [NSString stringWithFormat:@"%d", [postData length]];
+    NSLog(@"%@", credentials);
+    
+    mmmSpecialRequest *request = [[mmmSpecialRequest alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://%@/students", currentDomain]]];
+    [request setNotificationCallback:@"AddStudent"];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:postData];
+    
+    [NSURLConnection sendAsynchronousRequest:request queue:d_operationQueue completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        [self processData:data andSendNotification:request.notificationCallback];
+    }];    
+}
+
++ (UIImage *)colorizeImage:(UIImage *)baseImage color:(UIColor *)theColor {
+    UIGraphicsBeginImageContext(baseImage.size);
+    
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGRect area = CGRectMake(0, 0, baseImage.size.width, baseImage.size.height);
+    
+    CGContextScaleCTM(ctx, 1, -1);
+    CGContextTranslateCTM(ctx, 0, -area.size.height);
+    
+    CGContextSaveGState(ctx);
+    CGContextClipToMask(ctx, area, baseImage.CGImage);
+    
+    [theColor set];
+    CGContextFillRect(ctx, area);
+	
+    CGContextRestoreGState(ctx);
+    
+    CGContextSetBlendMode(ctx, kCGBlendModeMultiply);
+    
+    CGContextDrawImage(ctx, area, baseImage.CGImage);
+	
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return newImage;
 }
 
 @end

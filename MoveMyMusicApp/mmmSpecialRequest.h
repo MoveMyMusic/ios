@@ -10,4 +10,6 @@
 
 @interface mmmSpecialRequest : NSMutableURLRequest
 
+@property (nonatomic, retain) NSString *notificationCallback;
+
 @end
